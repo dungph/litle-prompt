@@ -1,0 +1,144 @@
+\documentclass{report}
+\usepackage[vietnamese]{babel}
+\usepackage{hyperref}
+\usepackage[acronym, toc]{glossaries}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{fontsize}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{blindtext}
+
+\changefontsize[20pt]{14pt}
+\usepackage[
+  paper=a4paper,
+  left=30mm,
+  right=20mm,
+  top=20mm,
+  bottom=25mm]{geometry}
+
+\setmainfont{Times New Roman}
+
+\titleformat{\chapter}[hang]
+    {\normalfont\fontsize{16}{19}\bfseries}
+    {Chương\ \thechapter:}
+    {1em}
+    {} 
+
+\titleformat{\section}
+    {\normalfont\fontsize{15}{19}\bfseries}
+    {\thesection}
+    {1em}
+    {}
+\titleformat{\subsection}
+    {\normalfont\fontsize{14}{19}\bfseries\slshape}
+    {\thesubsection}
+    {1em}
+    {}
+\titleformat{\subsubsection}
+    {\normalfont\fontsize{14}{19}\slshape}
+    {\thesubsubsection}
+    {1em}
+    {}
+
+\input{glossaries}
+
+\begin{document}
+
+\include{cover}
+\pagenumbering{roman}
+
+\chapter*{\hfill NHẬN XÉT VÀ CHO ĐIỂM CỦA GIÁO VIÊN\hfill}
+\paragraph{}
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\dotfill
+
+\renewcommand{\contentsname}{\hfill MỤC LỤC \hfill}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{MỤC LỤC}
+
+\tableofcontents
+
+\include{intro}
+
+\newpage
+
+\pagenumbering{arabic}
+
+\include{ch1}
+
+\include{ch2}
+
+\include{ch3}
+
+\renewcommand\bibname{TÀI LIỆU THAM KHẢO}
+
+\bibliographystyle{plain}
+
+\printglossary[title=TỪ VIẾT TẮT, toctitle=DANH SÁCH TỪ VIẾT TẮT, type=\acronymtype]
+
+\bibliography{refs}
+
+\end{document}
